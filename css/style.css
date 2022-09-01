@@ -1,0 +1,494 @@
+.wrapper {
+  min-height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1310px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.header{
+  height: 802px;
+}
+.logo {
+}
+.button{
+  color: #fff;
+  width: 203px;
+  height: 64px;
+  background-color: #FF6433;
+  
+  border-radius: 12px;
+}
+
+.title-2 {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+  /* identical to box height, or 150% */
+  letter-spacing: -0.03em;
+}
+
+.main__logos{
+  width: 100%;
+  height: 472px;
+  display: grid;
+  grid-template-columns: repeat(4, 316px);
+  grid-template-rows: repeat(2, 232px);
+  row-gap: 8px;
+  column-gap: 8px;
+  
+}
+
+.main__logos-image{
+  width: 44px;
+  height: 49px;
+}
+.main{
+  padding-top: 146px;
+  
+}
+/* Первый вьюпорт 
+--------------------------------------------------------------------- */
+
+.body__button{
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 175%;
+  padding: 16px 40px;
+  display: inline-block;
+  margin-top: 34px;
+  transition: all .3s;
+}
+
+
+.body__button:hover{
+  background-color: #5CBA99;
+
+}
+.header__top--inner {
+   display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+.header__nav {
+  margin-left: auto;
+}
+
+.header__nav-list {
+  display: flex;
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px;
+  position: relative;
+ 
+ 
+}
+
+.header__nav-item:hover {
+  background-color: #333;
+  color: #fff;
+
+}
+
+.header__nav-item {
+  margin-left: 40px;
+  transition: all .5s;
+}
+.header__nav-item:first-child {
+  margin-left: 0;
+}
+.header__nav-link {
+}
+.header__supports {
+  display: flex;
+}
+.header__nav-list::after{
+  content: "";
+  background-color: #939191;
+  height: 43px;
+  width: 0px;
+  opacity: 0.36;
+  border: .5px solid #939191;
+  position: absolute;
+  left: 468px;
+  transform: translateY(-3px);
+}
+
+.header__supports--logo{
+  
+  margin: 26px 14px 24px 64px;
+}
+.header__support--text {
+  flex-direction: column;
+  
+}
+
+.header__supports-title {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  padding-top:18px;
+}
+.header__supports-pnumber {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 175%;
+}
+
+.container-body{
+  max-width: 1310px;
+  padding: 0 15px;
+  margin: 0 auto;
+  padding-top: 108px;
+  height: 632px;
+  padding-bottom: 107px;
+}
+.header__body--inner {
+  display: flex;
+  flex-direction: row;
+}
+.header__body--left-part{
+  padding-top: 98px;
+  padding-right: 44px;
+ 
+}
+
+.header__body--right-part{
+  max-width: 605px;
+  max-height: 632px;
+  position: relative;
+  overflow: hidden;
+}
+.body__buttons{
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.header__body--image{
+  width: 632px;
+  max-height: 632px;
+  position: relative;
+  
+  z-index: -2;
+}
+
+.h1{
+  font-family: 'Manrope';
+font-style: normal;
+font-weight: 800;
+font-size: 64px;
+line-height: 84px;
+/* or 131% */
+letter-spacing: -0.03em;
+}
+
+.header__body--left-text{
+  max-width: 624px;
+  max-height: 252px;
+  text-align: left;
+}
+
+.body__play-link{
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 19px;
+}
+
+.body__play-button{
+  display: flex;
+  width: 140px;
+  height: 48px;
+  justify-content: center;
+  align-items: center;
+  transform: translate(8px, 40px);
+  transition: all .3s;
+}
+.body__play-button:hover {
+  background-color: #5CBA99;
+}
+
+.body__play-icon{
+  margin-right: 8px;
+}
+
+.header__body--service{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  width: 282px;
+  height: 102px;
+  background-color:#fff;
+  border-radius: 59px;  
+  position: absolute;
+  top: 81px;
+  left:-12px;
+  padding: auto 0;
+  box-shadow: 0px 0px 2px 12px rgba(109, 108, 115, 0.72);
+  overflow: hidden;
+}
+
+
+.header__body--service-text{
+  font-family: 'Manrope';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 36px;
+text-align: center;
+/* identical to box height, or 150% */
+letter-spacing: -0.03em;
+padding-right:30px;
+}
+
+.header__body--circle-image {
+padding-right: 14.41px;
+}
+
+.header__body--rating {
+  display: flex;
+  width: 326px;
+  height: 102px;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 2px 12px rgba(109, 108, 115, 0.72);
+  border-radius: 59px;
+  position: absolute;
+  top:460px;
+  left: 306px;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: end;
+  padding: auto 0;
+  overflow: hidden;
+}
+
+.header__body--rating-stars{
+  height: 36px;
+  width: 185px;
+  margin-right:32px;
+  grid-area: stars;
+}
+
+.header__body--rating-text {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+  letter-spacing: -0.03em;
+  padding-right:  30px;
+  grid-area: number;
+}
+
+.header__body--rating-text-2 {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+  color: #000000;
+  opacity: 0.7;
+  grid-area: rating;
+  margin-top: -10px;;
+}
+
+.header__body--rating-wrap-text {
+ transform: translateX(15px);
+}
+
+.header__body--wt {
+  width: 380px;
+  height: 70px;
+  transform: translate(8px, 40px);
+}
+
+.header__body--wt-text {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  position: absolute;
+  left: 45px;
+}
+.header__body--wt-title {
+  font-family: 'Manrope';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+color: #939191;
+}
+
+
+.header__body--wt-content{
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 175%;
+color: #1E1B1B;
+}
+.header__body--wt-icon{
+  transform: translateY(35px);
+}
+
+
+/* Второй вьюпорт 
+----------------------------------------------------------*/
+.main__upper--inner{
+  background-color:#F2F2F2;
+  height: 1052px;
+}
+
+.main__box {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 76px;
+  background-color: #D9D9D9;
+}
+
+.main__text{
+  width: 100%;
+  height: 238px;
+  position: relative;
+  overflow: hidden;
+}
+
+.main__text--big-title{
+  width: 858px;
+  height: 152px;
+  margin-left: 214px;
+}
+.h2{
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 58px;
+  line-height: 76px;
+  /* or 131% */
+  
+  text-align: center;
+  letter-spacing: -0.03em;
+}
+
+.logos-box{
+  display: flex;
+  width: 316px;
+  height: 232px;
+  background-color: #fff;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all .3s;
+}
+
+.main__logos-text{
+  font-family: 'Manrope';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 36px;
+/* identical to box height, or 150% */
+
+text-align: center;
+letter-spacing: -0.03em;
+margin-top: 19px;
+}
+
+.main__arrow{
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  margin-top: 32px;
+}
+.logos-box:hover{
+  background-color: #FF6433;
+  color:#fff;
+}
+.main__arrow-text{
+  display: inline-block;
+  font-family: 'Manrope';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 175%;
+margin-right: 16px;
+transform: translateY(-8px); 
+}
+
+/* Вьюпорт 3 ------------------------------------------------ */
+
+.main__middle--inner{
+  padding-top: 174px;
+}
+.main__middle-left-part{
+  width: 50%;
+}
+
+.main__middle--inner{
+  display: flex;
+  flex-direction: row;
+}
+
+
+.main__middle-right-part{
+  width: 432px;
+  height: 527px;
+  
+}
+
+.main__middle-text-big{
+  text-align: left;
+  margin-bottom:16px;
+}
+
+.right-part__circle{
+  width: 72px;
+  height: 72px;
+  background-color: #661CE7;
+  border-radius: 36px;
+  margin-bottom: 109px;
+}
+
+.main__middle-text-small{
+  max-width: 437px;
+  font-family: 'Manrope';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 28px;
+opacity: 0.6;
+}
+
+.main__middle-button{
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 175%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 34px;
+  transition: all .3s; 
+}
