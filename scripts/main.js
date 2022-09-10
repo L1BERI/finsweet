@@ -6,6 +6,8 @@ $(function () {
     spacing: "10px"
   });
 
+  $('.rating').
+
 });
 
 $(function () {
@@ -43,5 +45,12 @@ $(function () {
     $(this).toggleClass('questions__acc-link--active')
     $(this).children('.questions__acc-text').slideToggle()
   })
+
+  $(".header__nav-list a, .top__bg-box a, .footer__logo-link").on("click", function (event) {
+            event.preventDefault();
+            var id  = $(this).attr('href'),
+            top = $(id).offset().top;
+            $('body,html').animate({scrollTop: top}, 700);
 })
 
+})
