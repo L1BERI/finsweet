@@ -198,10 +198,20 @@ h2 {
   transition: all .3s;
   padding: 0 3px;
 }
-
+.header__nav-link::after {
+  display: block; 
+  content: ""; 
+  height: 1px; 
+  width: 0%; 
+  background-color: #FF6433; 
+  transition: width 0.4s ease-in-out; 
+}
+.header__nav-link:hover::after{
+width: 100%;
+}
 .header__nav-link:hover {
-  border-bottom:2px solid #FF6433;
-  color: #fff;
+ 
+  color: #FF6433;
   
 }
 
