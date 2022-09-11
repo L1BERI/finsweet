@@ -196,7 +196,7 @@ h2 {
   color: #1E1B1B;
   white-space: nowrap;
   transition: all .3s;
-  padding: 0 3px;
+
 }
 .header__nav-link::after {
   display: block; 
