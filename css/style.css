@@ -200,9 +200,9 @@ h2 {
 }
 
 .header__nav-link:hover {
-  background-color: #FF6433;
+  border-bottom:2px solid #FF6433;
   color: #fff;
-  border-radius: 3px;
+  
 }
 
 .header__line {
