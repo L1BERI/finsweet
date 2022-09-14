@@ -3,11 +3,10 @@ $(function () {
     rating: 4.6,
     starWidth: "28px",
     halfStar: true,
-    spacing: "10px"
+    spacing: "10px",
   });
-})
 
-  $(function () {
+ 
     var mixer = mixitup('.blog__cards');
 
     $('.blog__filter-btn').on('click', function () {
@@ -43,11 +42,28 @@ $(function () {
       $(this).children('.questions__acc-text').slideToggle()
     })
 
-    $(".header__nav-list a, .top__bg-box a, .footer__logo-link").on("click", function (event) {
+    $(".header__nav-list a").on("click", function (event) {
       event.preventDefault();
       var id = $(this).attr('href'),
         top = $(id).offset().top;
-      $('body,html').animate({ scrollTop: top }, 700);
+      $('body,html').animate({ scrollTop: top }, 1400);
     })
 
-  })
+    setInterval(() => {
+      if ($(window).scrollTop() > 0 && $('.header__top').hasClass('header__top--media') === false){
+        $('.burger').addClass('burger--scroll')
+      } else{
+        $('.burger').removeClass('burger--scroll')
+      }
+    }, 0);
+    // $('.burger').on('click', function (e) {
+    //   e.preventDefault()
+      
+    // })
+    $('.burger,.overlay').on('click', function (e) {
+      e.preventDefault()
+      $('.burger').toggleClass('burger--active')
+      $('.header__top').toggleClass('header__top--media')
+      $('.overlay').toggleClass('overlay--visible')
+    })
+});
