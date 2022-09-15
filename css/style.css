@@ -1834,6 +1834,10 @@ h2 {
   .prefooter__map-box{
     height: 312px;
   }
+  .questions__acc{
+    width: 300px;
+    margin-left: -100px;
+  }
 }
 
 @media (max-width:530px) {
@@ -1929,8 +1933,5 @@ h2 {
   .left-title {
     font-size: 41px;
   }
-  .questions__acc{
-    width: 300px;
-    margin-left: -100px;
-  }
+  
 }
