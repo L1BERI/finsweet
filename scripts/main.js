@@ -51,11 +51,11 @@ $(function () {
     $(this).children('.questions__acc-text').slideToggle()
   })
 
-  $(".header__nav-list a").on("click", function (event) {
+  $(".header__nav-list a, .footer__nav a").on("click", function (event) {
     event.preventDefault();
     var id = $(this).attr('href'),
       top = $(id).offset().top;
-    $('body,html').animate({ scrollTop: top }, 1400);
+    $('body,html').animate({ scrollTop: top }, 1000);
   })
 
   setInterval(() => {
