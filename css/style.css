@@ -784,10 +784,12 @@ h2 {
   justify-content: center;
   max-width: 100%;
 }
-.customers__heading h1{
+
+.customers__heading h1 {
   font-size: 58px;
   max-width: 909px;
 }
+
 .customers__slider {}
 
 .customers__slide {
@@ -1110,6 +1112,7 @@ h2 {
 .questions__acc-item {
   background: #fff;
   margin-bottom: 12px;
+  max-width: 100%;
 }
 
 .questions__acc-head {
@@ -1124,12 +1127,13 @@ h2 {
   display: block;
   padding: 40px 40px 38px 40px;
 }
+.acc-title{
+  /* margin-left: 30px; */
+}
 
 .question__head-box {
-  max-width: 51px;
-  width: 100%;
-  max-height: 48px;
-  height: 48px;
+ width: 51px;
+  height:48px;
   background: #FF6433;
   position: relative;
 }
@@ -1214,6 +1218,7 @@ h2 {
   padding-top: 128px;
   justify-content: space-between;
   align-items: flex-start;
+  flex-wrap: wrap;
 }
 
 .bottom__l {
@@ -1228,7 +1233,7 @@ h2 {
 
 .bottom_l-head {
   display: block;
-  width: 464px;
+  max-width: 464px;
   color: #fff;
   text-align: left;
 }
@@ -1295,8 +1300,6 @@ h2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-
 }
 
 .connect__content {
@@ -1353,7 +1356,7 @@ h2 {
 .connect_text-message {
   margin-bottom: 4px;
   background: #F2F2F2;
-  padding: 23px 420px 23px 40px;
+  padding: 23px 0 23px 40px;
   border-radius: 2px;
 }
 
@@ -1449,9 +1452,7 @@ h2 {
     align-items: center;
   }
 
-  .boxes__info {
-    
-  }
+  .boxes__info {}
 }
 
 @media (max-width:1250px) {
@@ -1596,8 +1597,34 @@ h2 {
   .process__right {
     max-width: min-content;
   }
+  .connect__inner{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: stretch;
+  }
+  .connect__form{
+    margin-bottom: 30px;
+  }
+  /* ===================================== */
+  .footer__inner{
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .footer__logo-link{
+    margin-bottom: 30px;
+  }
+  .footer__nav{
+    display: none;
+  }
 }
-
+@media (max-width:1005px) {
+  .bottom__l{
+    padding-bottom: 30px;
+  }
+  
+}
 @media (max-width:940px) {
   .header__right-part {
     display: none;
@@ -1615,10 +1642,23 @@ h2 {
   .top__bg-box {
     width: 100%;
   }
-/* ======================================== */
-.customers__heading h1{
-  font-size: 50px;
-}
+
+  /* ======================================== */
+  .customers__heading h1 {
+    font-size: 50px;
+  }
+
+  /* ======================================= */
+
+  .acc-title{
+    font-size: 18px;
+  }
+  .text-body-01--opacity{
+    font-size: 12px;
+  }
+  .bottom__l{
+    margin-bottom: 40px;
+  }
 }
 
 @media (max-width:830px) {
@@ -1725,10 +1765,43 @@ h2 {
   .blog__cards-tag {
     font-size: 10px;
   }
+
   /* =========================================== */
-  .customers__heading h1{
+  .customers__heading h1 {
     font-size: 38px;
   }
+  .questions__heading h2{
+    font-size: 38px;
+    text-align: center;
+    margin-left: -100px;
+  }
+  .connect__input-name::placeholder,
+.connect__input-mail::placeholder,
+.connect__input-service::placeholder,
+.connect_text-message::placeholder {
+  font-size: 12px;
+}
+.contact__bottom-text{
+  font-size: 18px;
+}
+.contact__top-text{
+  font-size: 13px;
+}
+.connect__head-text{
+  font-size: 30px;
+}
+.bottom_l-head{
+  font-size: 38px;
+}
+
+.text-top{
+  font-size: 14px;
+} 
+.link-bot,
+.text-bot{
+  font-size: 16px;
+}
+
 }
 
 @media (max-width:710px) {
@@ -1743,13 +1816,24 @@ h2 {
   .info__city {
     font-size: 12px;
   }
+
   .customers__slider-arrows{
-    display: flex;
-    justify-content: center;
+    visibility: hidden;
   }
- .customers__slider-arrow{
-  transform: translateY(39px);
- }
+  /* ========================================== */
+  .acc-title{
+    font-size: 12px;
+  }
+  .text-body-01--opacity{
+    font-size: 9px;
+  }
+  .question__head-box{
+    width: 30px;
+    height: 30px;
+  }
+  .prefooter__map-box{
+    height: 312px;
+  }
 }
 
 @media (max-width:530px) {
@@ -1764,9 +1848,24 @@ h2 {
   .content__text span {
     font-size: 16px;
   }
-  .message__text{
+
+  .message__text {
     font-size: 16px;
   }
+  .question__head-box{
+    transform: scale(0.7);
+  }
+  .questions__acc-link {
+    display: block;
+    padding: 25px 25px 25px 25px;
+}
+.question__head-box::before,
+.question__head-box::after{
+  width: 10px;
+}
+.questions__heading{
+  font-size: 38px;
+}
 }
 
 @media (max-width:410px) {
@@ -1829,5 +1928,9 @@ h2 {
 
   .left-title {
     font-size: 41px;
+  }
+  .questions__acc{
+    width: 300px;
+    margin-left: -100px;
   }
 }

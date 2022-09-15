@@ -31,7 +31,7 @@ $(function () {
             slidesToShow: 1,
           },
         },
-      ]
+      ]   
   })
 
   $('.customers__slider-next').on('click', function (e) {
