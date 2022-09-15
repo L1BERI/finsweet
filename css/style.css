@@ -1618,11 +1618,12 @@ h2 {
   .footer__nav{
     display: none;
   }
+  .bottom__l{
+    margin-bottom: 1020px;
+    padding-bottom: 0px;
+  }
 }
 @media (max-width:1005px) {
-  .bottom__l{
-    padding-bottom: 30px;
-  }
   
 }
 @media (max-width:940px) {
