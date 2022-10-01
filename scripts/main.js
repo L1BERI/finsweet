@@ -43,7 +43,14 @@ $(function () {
     $('.customers__slider').slick('slickPrev')
   })
 
-
+  $('.header__nav-item').on('click', function(e){
+    e.preventDefault()
+    if ($('.header__top').hasClass('header__top--media')){
+      $('.header__top').removeClass('header__top--media')
+      $('.overlay').removeClass('overlay--visible')
+      $('body').css('overflow-y', 'scroll')
+    }
+  })
 
   $('.questions__acc-link').on('click', function (e) {
     e.preventDefault()
